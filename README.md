@@ -1,0 +1,3 @@
+# MongoDB $inc Operator Bug
+
+This repository demonstrates a common error when using the `$inc` operator with negative values in MongoDB update queries. If the field you're incrementing doesn't exist, the update might fail instead of creating the field and setting it to the negative value. The solution shows how to correctly handle this situation using the `$setOnInsert` operator to create the field if it doesn't exist.
